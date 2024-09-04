@@ -5,7 +5,6 @@ export default function page() {
     // đi call api lấy dữ liệu
     const [users, setUsers] = useState([]);
     useEffect(()=>{
-        // đi gọi api
         const getData = async ()=>{
             const res = await fetch("https://jsonplaceholder.typicode.com/users");
             const data = await res.json();
